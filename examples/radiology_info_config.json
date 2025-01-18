@@ -1,0 +1,35 @@
+{
+    "role": "radiology information assistant",
+    "user_objective": "The Radiology Information Assistant assists users in efficiently searching for sample cases for radiology diagnosis by allowing them to specify keywords such as anatomy, modality, disease names, departments, and symthom. ",
+    "builder_objective": "The Radiology Information Assistant help users search for particular information on radiology diagnosis.",
+    "domain": "radiology",
+    "intro": "There are two source websites about radiology that provide rich information about theoretical and real-case knowledge related to radiology diagnosis.",
+    "task_docs": [{
+        "source": "https://www.ultrasound-images.com/",
+        "desc": "Ultrasound Image Gallery is a rich resource offering a diverse collection of high-resolution ultrasound, color Doppler, and 3D images meticulously curated by a team of top radiologists, sonographers, and sonologists. This platform provides a unique insight into the world of medical imaging, showcasing fine-tuned sonographic visuals that highlight intricate details with exceptional clarity. Each image is labeled comprehensively, accompanied by detailed descriptions that include clinical specifics and major ultrasound findings. ",
+        "num": 20
+    },
+    {
+        "source": "https://mrimaster.com/",
+        "desc": "MRIMASTER.COM acts as a vital online platform for MRI professionals, radiography students, radiologists, medical enthusiasts, and the curious, offering a wealth of resources. The site encompasses over 120 examination protocols, 40+ artifacts, whole-body cross-sectional anatomy, MRI pathologies, and MRI physics. Users can access detailed insights into MRI scan preparation within the 'Planning' section, optimal imaging parameters in the 'Technical' section, and typical sequences in the 'Characterized Images' section. Additionally, the website provides information on MRI physics, cross-sectional anatomy, specific pathologies, and strategies for artifact correction, fostering a comprehensive understanding of MRI diagnostics.",
+        "num": 20
+    }],
+    "rag_docs": [{
+        "source": "https://www.ultrasound-images.com/",
+        "desc": "Ultrasound Image Gallery is a rich resource offering a diverse collection of high-resolution ultrasound, color Doppler, and 3D images meticulously curated by a team of top radiologists, sonographers, and sonologists. This platform provides a unique insight into the world of medical imaging, showcasing fine-tuned sonographic visuals that highlight intricate details with exceptional clarity. Each image is labeled comprehensively, accompanied by detailed descriptions that include clinical specifics and major ultrasound findings. ",
+        "num": 20
+    },
+    {
+        "source": "https://mrimaster.com/",
+        "desc": "MRIMASTER.COM acts as a vital online platform for MRI professionals, radiography students, radiologists, medical enthusiasts, and the curious, offering a wealth of resources. The site encompasses over 120 examination protocols, 40+ artifacts, whole-body cross-sectional anatomy, MRI pathologies, and MRI physics. Users can access detailed insights into MRI scan preparation within the 'Planning' section, optimal imaging parameters in the 'Technical' section, and typical sequences in the 'Characterized Images' section. Additionally, the website provides information on MRI physics, cross-sectional anatomy, specific pathologies, and strategies for artifact correction, fostering a comprehensive understanding of MRI diagnostics.",
+        "num": 20
+    }],
+    "tasks": [],
+    "workers": [
+        "RAGWorker",
+        "RagMsgWorker",
+        "MessageWorker",
+        "SearchWorker",
+        "DefaultWorker"
+    ]
+}

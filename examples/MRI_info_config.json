@@ -1,0 +1,27 @@
+{
+    "role": "MRI information assistant",
+    "user_objective": "The MRI Information Assistant assists users in efficiently searching for sample cases for MRI diagnosis by allowing them to specify keywords such as anatomy, modality, disease names, departments, and symthom. ",
+    "builder_objective": "The MRI Information Assistant help users search for particular information on MRI diagnosis.",
+    "domain": "Magnetic resonance imaging (MRI)",
+    "intro": "Magnetic resonance imaging (MRI) is a medical imaging technique that uses a magnetic field and computer-generated radio waves to create detailed images of the organs and tissues in your body. There are one source website about MRI that provide rich information about theoretical and real-case knowledge related to MRI diagnosis.",
+    "task_docs": [
+    {
+        "source": "https://mrimaster.com/",
+        "desc": "MRIMASTER.COM acts as a vital online platform for MRI professionals, radiography students, radiologists, medical enthusiasts, and the curious, offering a wealth of resources. The site encompasses over 120 examination protocols, 40+ artifacts, whole-body cross-sectional anatomy, MRI pathologies, and MRI physics. Users can access detailed insights into MRI scan preparation within the 'Planning' section, optimal imaging parameters in the 'Technical' section, and typical sequences in the 'Characterized Images' section. Additionally, the website provides information on MRI physics, cross-sectional anatomy, specific pathologies, and strategies for artifact correction, fostering a comprehensive understanding of MRI diagnostics.",
+        "num": 30
+    }],
+    "rag_docs": [
+    {
+        "source": "https://mrimaster.com/",
+        "desc": "MRIMASTER.COM acts as a vital online platform for MRI professionals, radiography students, radiologists, medical enthusiasts, and the curious, offering a wealth of resources. The site encompasses over 120 examination protocols, 40+ artifacts, whole-body cross-sectional anatomy, MRI pathologies, and MRI physics. Users can access detailed insights into MRI scan preparation within the 'Planning' section, optimal imaging parameters in the 'Technical' section, and typical sequences in the 'Characterized Images' section. Additionally, the website provides information on MRI physics, cross-sectional anatomy, specific pathologies, and strategies for artifact correction, fostering a comprehensive understanding of MRI diagnostics.",
+        "num": 30
+    }],
+    "tasks": [],
+    "workers": [
+        "RAGWorker",
+        "RagMsgWorker",
+        "MessageWorker",
+        "SearchWorker",
+        "DefaultWorker"
+    ]
+}
